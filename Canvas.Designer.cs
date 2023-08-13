@@ -1,4 +1,4 @@
-﻿namespace canvas
+﻿namespace BlishHUD
 {
     partial class Canvas
     {

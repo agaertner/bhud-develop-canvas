@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace canvas
+namespace BlishHUD
 {
     internal static class Program
     {
@@ -36,9 +36,9 @@ namespace canvas
                         {
                             backColor = ColorTranslator.FromHtml(args[i + 1]);
                         }
-                        catch (Exception)
+                        catch (Exception e)
                         {
-                            // Handle invalid color format if needed
+                            throw new ArgumentException("Invalid color format. Please use a hex color code.", e);
                         }
                     }
                 }
